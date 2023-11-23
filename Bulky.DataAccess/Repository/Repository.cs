@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 
 namespace Bulky.DataAccess.Repository
 {
-    internal class Repository<T> : IRepository<T> where T : class
+    public class Repository<T> : IRepository<T> where T : class
     {
 
         private readonly ApplicationDbContext _db;
@@ -15,7 +15,7 @@ namespace Bulky.DataAccess.Repository
         {
             db = _db;
             this.dbset = _db.Set<T>();
-            //  dbSet "is the same as using" _db.Category
+            //  dbSet "is the same as using" _db.Category "for example"
         }
 
         public void Add(T entity)

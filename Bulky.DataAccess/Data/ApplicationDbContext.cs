@@ -9,8 +9,6 @@ namespace Bulky.DataAcess.Data
         {
 
         }
-
-
         public DbSet<Category> Categories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
