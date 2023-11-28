@@ -13,7 +13,7 @@ namespace Bulky.DataAccess.Repository
 
         public Repository(ApplicationDbContext db)
         {
-            db = _db;
+            _db = db;
             this.dbset = _db.Set<T>();
             //  dbSet "is the same as using" _db.Category "for example"
         }
