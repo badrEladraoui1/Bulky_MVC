@@ -17,7 +17,9 @@ namespace Bulky.DataAcess.Data
             modelBuilder.Entity<Category>().HasData(
                 new Category { Id = 1, Name = "Action", DisplayOrder = 1 },
                 new Category { Id = 2, Name = "SciFi", DisplayOrder = 2 },
-                new Category { Id = 3, Name = "History", DisplayOrder = 3 }
+                new Category { Id = 3, Name = "History", DisplayOrder = 3 },
+                new Category { Id = 4, Name = "Adventure", DisplayOrder = 4 },
+                new Category { Id = 5, Name = "Fantasy", DisplayOrder = 5 }
                 );
             modelBuilder.Entity<Product>().HasData(
                new Product
@@ -36,7 +38,7 @@ namespace Bulky.DataAcess.Data
                },
                 new Product
                 {
-                    Id = 2,
+                    Id = 14,
                     Title = "Dark Skies",
                     Author = "Nancy Hoover",
                     Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -50,7 +52,7 @@ namespace Bulky.DataAcess.Data
                 },
                 new Product
                 {
-                    Id = 3,
+                    Id = 13,
                     Title = "Vanish in the Sunset",
                     Author = "Julian Button",
                     Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -78,7 +80,7 @@ namespace Bulky.DataAcess.Data
                 },
                 new Product
                 {
-                    Id = 5,
+                    Id = 12,
                     Title = "Rock in the Ocean",
                     Author = "Ron Parker",
                     Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
@@ -102,6 +104,34 @@ namespace Bulky.DataAcess.Data
                     Price50 = 22,
                     Price100 = 20,
                     CategoryId = 2,
+                    ImageUrl = ""
+                },
+                new Product
+                {
+                    Id = 7,
+                    Title = "Mystic Quest",
+                    Author = "Eleanor Stone",
+                    Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                    ISBN = "MQT888888801",
+                    ListPrice = 45,
+                    Price = 40,
+                    Price50 = 35,
+                    Price100 = 30,
+                    CategoryId = 4,
+                    ImageUrl = ""
+                },
+                new Product
+                {
+                    Id = 8,
+                    Title = "Dreamscape",
+                    Author = "Oliver Nightingale",
+                    Description = "Praesent vitae sodales libero. Praesent molestie orci augue, vitae euismod velit sollicitudin ac. Praesent vestibulum facilisis nibh ut ultricies.\r\n\r\nNunc malesuada viverra ipsum sit amet tincidunt. ",
+                    ISBN = "DNS999999901",
+                    ListPrice = 55,
+                    Price = 50,
+                    Price50 = 45,
+                    Price100 = 40,
+                    CategoryId = 5,
                     ImageUrl = ""
                 }
     );
