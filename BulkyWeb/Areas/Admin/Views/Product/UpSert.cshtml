@@ -27,6 +27,7 @@
                         <div class="mb-3 row p-1">
                             <label asp-for="Product.Description" class="p-0 "></label>
                             <textarea asp-for="Product.Description" class="p-0 form-control"></textarea>
+                            <span asp-validation-for="Product.Description" class="text-danger"></span> @* added now *@
                         </div>
                         <div class="mb-3 row p-1">
                             <label asp-for="Product.ISBN" class="p-0"></label>
@@ -104,7 +105,7 @@
 
 
 
-@section Scripts{
+@* @section Scripts{
     @{
         <script>
             tinymce.init({
@@ -122,4 +123,4 @@
         </script>
         <partial name="_ValidationScriptsPartial" />
     }
-}
+} *@
